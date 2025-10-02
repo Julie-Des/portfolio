@@ -1,4 +1,4 @@
-import HeaderText from "./Header-text"
+import HeaderText from "./HeaderText"
 
 export default function Header() {
     return (

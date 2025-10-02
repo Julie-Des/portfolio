@@ -1,4 +1,4 @@
-import {poppins, leckerli} from "./fonts";
+import { poppins, leckerli } from "./fonts";
 import type { Metadata } from "next";
 import Nav from "./components/Nav";
 import "./globals.css";
@@ -16,8 +16,9 @@ export default function RootLayout({
 	return (
 		<html lang="fr" className={`${poppins.variable} ${leckerli.variable}`}>
 			<body>
-        <Nav />
-        {children}</body>
+				<Nav />
+				{children}
+			</body>
 		</html>
 	);
 }
