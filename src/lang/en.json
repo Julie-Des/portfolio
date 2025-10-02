@@ -1,0 +1,47 @@
+{
+  "navbar": {
+    "about": "About",
+    "projects": "My Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Hello, I am",
+    "job1": "Frontend Developer",
+    "job2": "Integrator",
+    "objectiveLabel": "My goal:",
+    "objectiveText": "to bring modern, user-friendly, inclusive and environmentally-friendly websites to life",
+    "contact": "Contact me",
+    "cv": "My CV"
+  },
+  "about": {
+    "title": "About",
+    "text": "After working for 10 years in the field of occupational health, I felt the need to learn new things and express my creativity. Becoming a web developer quickly became obvious to me. I first trained on my own for a year, then started a degree program at OpenClassrooms in 2024. This portfolio is the final step of that journey, and I hope the first towards new professional adventures!"
+  },
+  "projects": {
+    "title": "My Projects",
+    "card1": {
+      "title": "Development of a real estate rental web application",
+      "technos": "React . React Router . Vite . Sass . CSS Animations",
+      "voir": "View"
+    }
+  },
+  "skills": {
+    "title": "My Skills",
+    "text1": "Frontend & Design",
+    "text2": "Tools & Methods"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "inputName": "Your name",
+    "inputEmail": "Your email",
+    "inputMessage": "Your message",
+    "submitButton": "Send"
+  },
+  "footer": {
+    "name": "Julie Deshayes",
+    "region": "Normandy",
+    "town": "Caen",
+    "right": "All rights reserved"
+  }
+}

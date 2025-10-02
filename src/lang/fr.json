@@ -1,0 +1,47 @@
+{
+  "navbar": {
+    "about": "À propos",
+    "projects": "Mes Projets",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Bonjour, je suis",
+    "job1": "Intégratrice",
+    "job2": "développeuse Front-end",
+    "objectiveLabel": "Mon objectif :",
+    "objectiveText" : "donner vie à des sites web modernes, agréables à utiliser, inclusifs et plus respectueux de l'environnement",
+    "contact": "Contactez-moi",
+    "cv": "Mon CV"
+  },
+  "about": {
+    "title": "À propos",
+    "text": "Après avoir travaillé 10 ans dans le milieu de la santé au travail, j’ai ressenti le besoin d’apprendre de nouvelles choses et d’exprimer ma créativité. Le métier de développeuse web s’est présenté à moi comme une évidence. Je me suis donc formée en autodidacte pendant 1 an, puis j’ai débuté une formation diplômante chez Openclassrooms en 2024.  Ce portfolio est la dernière étape de ce parcours diplômant et j’espère la première vers de nouvelles aventures professionnelles !"
+  },
+  "projects": {
+    "title": "Mes projets",
+    "card1" : {
+        "title": "Création d'une application web de location immoblilière",
+        "technos": "React . React-router . Vite . Sass . Animations CSS",
+        "voir": "Voir"
+    }
+  },
+  "skills": {
+    "title" : "Mes Compétences",
+    "text1" : "Front-end & conception",
+    "text2" : "Outils & méthodes"
+  },
+  "contact": {
+    "title": "Me contacter",
+    "inputName": "Votre nom",
+    "inputEmail": "Votre email",
+    "inputMessage": "Votre message",
+    "submitButton": "Envoyer"
+  },
+  "footer": {
+    "name": "Julie Deshayes",
+    "region": "Normandie",
+    "town": "Caen",
+    "right": "Tous droits réservés"
+  }
+}
