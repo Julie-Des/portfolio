@@ -1,23 +1,46 @@
+"use client";
+
 import { leckerli } from "../fonts";
+import { useTranslation } from "../../context/TranslationContext"; // adapte le chemin si besoin
 
 export default function Nav() {
+	const { t, lang, switchLang } = useTranslation();
+
 	return (
 		<nav className="text-white text-xl flex justify-between items-center bg-green pt-8 pb-6 pl-20 pr-20 fixed right-0 left-0 z-50">
-            <p className={`${leckerli.className} text-6xl text-pink-dark`}>Julie</p>
-			<ul className="flex gap-16 cursor-pointer text-white">
+			<p className={`${leckerli.className} text-6xl text-pink-dark`}>Julie</p>
+			<ul className="flex gap-16 cursor-pointer text-white items-center">
 				<li>
-					<a href="#about" className="nav-link hover:text-pink-dark">À propos</a>
+					<a href="#about" className="nav-link hover:text-pink-dark">
+						{t.navbar.about}
+					</a>
 				</li>
 				<li>
-					<a href="#projects" className="nav-link hover:text-pink-dark">Mes projets</a>
+					<a href="#projects" className="nav-link hover:text-pink-dark">
+						{t.navbar.projects}
+					</a>
 				</li>
 				<li>
-					<a href="#skills" className="nav-link hover:text-pink-dark">Mes compétences</a>
+					<a href="#skills" className="nav-link hover:text-pink-dark">
+						{t.navbar.skills}
+					</a>
 				</li>
 				<li>
-					<a href="#contact" className="nav-link hover:text-pink-dark">Contact</a>
+					<a href="#contact" className="nav-link hover:text-pink-dark">
+						{t.navbar.contact}
+					</a>
 				</li>
-				<li>FR | EN</li>
+				<li className="flex gap-2 pb-2">
+					<button
+						onClick={() => switchLang("fr")}
+						className={`hover:text-pink-dark ${lang === "fr" ? "text-pink-dark font-bold" : ""}`}
+					>FR</button>
+					<p>|</p>
+					<button
+						onClick={() => switchLang("en")}
+						className={`hover:text-pink-dark ${lang === "en" ? "text-pink-dark font-bold" : ""}`}
+					>EN</button>
+				</li>
 			</ul>
 		</nav>
 	);

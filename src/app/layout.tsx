@@ -1,6 +1,7 @@
 import { poppins, leckerli } from "./fonts";
 import type { Metadata } from "next";
 import Nav from "./components/Nav";
+import { TranslationProvider } from "@/context/TranslationContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,8 +17,10 @@ export default function RootLayout({
 	return (
 		<html lang="fr" className={`${poppins.variable} ${leckerli.variable}`}>
 			<body>
-				<Nav />
-				{children}
+				<TranslationProvider>
+					<Nav />
+					{children}
+				</TranslationProvider>
 			</body>
 		</html>
 	);
