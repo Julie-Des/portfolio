@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode, useMemo } from "react";
 import fr from "../lang/fr.json";
 import en from "../lang/en.json";
 
@@ -30,8 +30,17 @@ export function TranslationProvider({ children }: Readonly<{ children: ReactNode
 
   const translations = lang === "fr" ? fr : en;
 
+  const value = useMemo(
+    () => ({
+        lang,
+        t: translations,
+        switchLang,
+    }),
+    [lang, translations]
+  );
+
   return (
-    <TranslationContext.Provider value={{ lang, t: translations, switchLang }}>
+    <TranslationContext.Provider value={value}>
       {children}
     </TranslationContext.Provider>
   );

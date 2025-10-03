@@ -33,12 +33,12 @@ export default function Nav() {
 				<li className="flex gap-2 pb-2">
 					<button
 						onClick={() => switchLang("fr")}
-						className={`hover:text-pink-dark ${lang === "fr" ? "text-pink-dark font-bold" : ""}`}
+						className={`hover:text-pink-dark ${lang === "fr" ? "text-pink-dark font-bold" : ""} cursor-pointer`}
 					>FR</button>
 					<p>|</p>
 					<button
 						onClick={() => switchLang("en")}
-						className={`hover:text-pink-dark ${lang === "en" ? "text-pink-dark font-bold" : ""}`}
+						className={`hover:text-pink-dark ${lang === "en" ? "text-pink-dark font-bold" : ""} cursor-pointer`}
 					>EN</button>
 				</li>
 			</ul>

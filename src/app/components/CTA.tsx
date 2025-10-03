@@ -2,20 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { ReactNode } from "react";
 
-// Définissez un type d'élément pour le rendu
 type ElementTag = "a" | "button" | "div" | "span";
 
-interface ButtonProps {
-	readonly text: string;
-	readonly tag: ElementTag;
-	readonly href?: string;
-	readonly onClick?: (event: React.MouseEvent) => void;
-	readonly type?: "button" | "submit" | "reset";
-	readonly imageSrc?: string;
-    readonly altText?: string;
-	readonly imageElement?: ReactNode;
-	readonly external?: boolean;
-}
+type ButtonProps = Readonly<{
+	text: string;
+	tag: ElementTag;
+	href?: string;
+	onClick?: (event: React.MouseEvent) => void;
+	type?: "button" | "submit" | "reset";
+	imageSrc?: string;
+	altText?: string;
+	imageElement?: ReactNode;
+	external?: boolean;
+}>;
+
 
 export default function Cta({
 	text,
@@ -82,8 +82,7 @@ export default function Cta({
 		);
 	}
 
-	// Si c'est un simple conteneur stylisé (div, span, etc.)
-	// Utilisation de React.createElement pour un rendu dynamique simple
+	// StyleComponent
 	return React.createElement(
 		tag,
 		{ className: baseClasses, onClick: onClick },
