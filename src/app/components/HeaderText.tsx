@@ -9,8 +9,8 @@ export default function HeaderText() {
 	const { t } = useTranslation();
 
 	return (
-		<div className="flex justify-center items-start w-1/2">
-			<Image src="/images/hand.png" alt="" width={60} height={60} />
+		< div className="flex justify-center items-start w-1/2">
+			<Image src="/images/hand.png" alt="" width={55} height={55} />
 			<div className="text-white pl-2.5 flex flex-col gap-4.5">
 				<h1 className="text-5xl">
 					{t.header.title}<span className={`${leckerli.className} text-pink-dark ml-1.5`}> Julie</span>
@@ -26,7 +26,6 @@ export default function HeaderText() {
 					<Cta tag="a" text={t.header.cv} href="/CV_Julie_Deshayes.pdf" imageSrc="/images/arrow-button.png" altText="Flèche indiquant que le lien mène à une page externe" external />
 				</div>
 			</div>
-			
 		</div>
 	);
 }
