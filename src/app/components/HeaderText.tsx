@@ -4,6 +4,9 @@ import Image from "next/image";
 import { leckerli } from "../fonts";
 import { useTranslation } from "@/context/TranslationContext";
 import Cta from "./CTA";
+import GithubIcon from "./icons/GithubIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
+
 
 export default function HeaderText() {
 	const { t } = useTranslation();
@@ -24,8 +27,8 @@ export default function HeaderText() {
 				<div className="flex gap-5 mt-2.5 items-end">
 					<Cta tag="a" text={t.header.contact} href="#footer" />
 					<Cta tag="a" text={t.header.cv} href="/CV_Julie_Deshayes.pdf" imageSrc="/images/arrow-button.png" altText="Flèche indiquant que le lien mène à une page externe" external />
-					<a href="https://github.com/Julie-Des" target="_blank"><Image src="/images/github.png" alt="Lien vers le profil sur Github" width={23} height={22.65} /></a>
-					<a href="https://www.linkedin.com/in/julie-deshayes-21443727b" target="_blank"><Image src="/images/linkedin.png" alt="Lien vers le profil sur Linkedin" width={22} height={21.65} /></a>
+					<a href="https://github.com/Julie-Des" target="_blank" rel="noopener noreferrer" className="icon-btn rounded-full"> <GithubIcon /></a>
+					<a href="https://www.linkedin.com/in/julie-deshayes-21443727b" target="_blank" rel="noopener noreferrer" className="icon-btn"><LinkedinIcon /></a>
 				</div>
 			</div>
 		</div>

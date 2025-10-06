@@ -1,54 +1,63 @@
 @import "tailwindcss";
 
 :root {
-  font-family: var(--font-poppins);
+	font-family: var(--font-poppins);
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 @theme {
-  --color-green: #1B4332;
-  --color-pink-dark: #f9cada;
-  --color-pink-light: #fbeff3;
-  --color-pink-hover: #f9cada;
-  --color-white: #fdfdfd;
-  --color-black-text: #212529;
+	--color-green: #1b4332;
+	--color-pink-dark: #f9cada;
+	--color-pink-light: #fbeff3;
+	--color-pink-hover: #f9cada;
+	--color-white: #fdfdfd;
+	--color-black-text: #212529;
 }
 
 .nav-link {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 8px; /* espace pour la vague */
+	position: relative;
+	display: inline-block;
+	padding-bottom: 8px; /* espace pour la vague */
 }
 
 .nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 10px;
-  background: url("/images/wave.png") no-repeat center;
-  background-size: contain;
-  opacity: 0;
-  transform: translateY(5px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 10px;
+	background: url("/images/wave.png") no-repeat center;
+	background-size: contain;
+	opacity: 0;
+	transform: translateY(5px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .nav-link:hover::after {
-  opacity: 1;
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .btn {
-  @apply bg-[#f9cada] text-[#1b4332] px-6 py-3 rounded-[30px] font-bold no-underline 
+	@apply bg-[#f9cada] text-[#1b4332] px-6 py-3 rounded-[30px] font-bold no-underline 
          transition-all duration-300 ease-in-out 
          hover:bg-[#f6b8cd] hover:shadow-[0_4px_15px_rgba(249,202,218,0.5)]
          flex items-center gap-2 cursor-pointer;
 }
 
+.icon-btn {
+  @apply text-[#f9cada]
+         transition duration-300 ease-in-out
+         hover:text-[#f6b8cd] hover:shadow-[0_4px_15px_rgba(249,202,218,0.5)]
+         focus:text-[#f6b8cd] focus:shadow-[0_4px_15px_rgba(249,202,218,0.5)]
+         focus:outline-none;
+}
+
+
 .title {
-  @apply font-bold text-3xl text-green mb-7;
+	@apply font-bold text-3xl text-green mb-7;
 }
