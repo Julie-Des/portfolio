@@ -21,9 +21,11 @@ export default function HeaderText() {
 				<p className="text-xl">
 					<span className="text-pink-dark font-semibold"> {t.header.objectiveLabel} </span> {t.header.objectiveText}
 				</p>
-				<div className="flex gap-5 mt-2.5">
+				<div className="flex gap-5 mt-2.5 items-end">
 					<Cta tag="a" text={t.header.contact} href="#footer" />
 					<Cta tag="a" text={t.header.cv} href="/CV_Julie_Deshayes.pdf" imageSrc="/images/arrow-button.png" altText="Flèche indiquant que le lien mène à une page externe" external />
+					<a href="https://github.com/Julie-Des" target="_blank"><Image src="/images/github.png" alt="Lien vers le profil sur Github" width={23} height={22.65} /></a>
+					<a href="https://www.linkedin.com/in/julie-deshayes-21443727b" target="_blank"><Image src="/images/linkedin.png" alt="Lien vers le profil sur Linkedin" width={22} height={21.65} /></a>
 				</div>
 			</div>
 		</div>

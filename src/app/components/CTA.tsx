@@ -41,8 +41,9 @@ export default function Cta({
 			<Image
 				src={imageSrc}
 				alt={altText || ""}
-				width={25}
-				height={25}
+				width={20}
+				height={20}
+				className="w-[20] h-[20]"
 			/>
 		);
 	}
@@ -63,7 +64,7 @@ export default function Cta({
 			<a
 				href={href}
 				className={baseClasses}
-				target={external ? "_blank" : "_self"} // Ouvre dans un nouvel onglet si external est vrai
+				target={external ? "_blank" : "_self"}
 				rel={external ? "noopener noreferrer" : undefined}
 			>
 				{text}
