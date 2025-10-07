@@ -24,6 +24,11 @@
         "title": "Création d'une application web de location immoblilière",
         "technos": "React . React-router . Vite . Sass . Animations CSS",
         "voir": "Voir"
+    },
+    "card2" : {
+        "title": "Optimisation du référencement d'un site de photographe",
+        "technos": "Google Lighthouse . SEO . Vite . Sass . Animations CSS",
+        "voir": "Voir"
     }
   },
   "skills": {

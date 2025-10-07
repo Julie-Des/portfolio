@@ -20,7 +20,7 @@ html {
 .nav-link {
 	position: relative;
 	display: inline-block;
-	padding-bottom: 8px; /* espace pour la vague */
+	padding-bottom: 15px;
 }
 
 .nav-link::after {
@@ -29,8 +29,8 @@ html {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 10px;
-	background: url("/images/wave.png") no-repeat center;
+	height: 30px;
+	background: url("/icons/wave.png") no-repeat center;
 	background-size: contain;
 	opacity: 0;
 	transform: translateY(5px);
@@ -50,12 +50,11 @@ html {
 }
 
 .icon-btn {
-  @apply text-[#f9cada] bg-transparent box-border
+	@apply text-[#f9cada] bg-transparent box-border
          transition duration-300 ease-in-out
          hover:text-[#f6b8cd] hover:shadow-[0_4px_15px_rgba(249,202,218,0.5)]
-         focus:outline-none focus:shadow-[0_0_0_3px_rgba(249,202,218,0.5)];
+		 inline-flex items-center justify-center w-7 h-7;
 }
-
 
 .title {
 	@apply font-bold text-3xl text-green mb-7;

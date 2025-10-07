@@ -13,7 +13,7 @@ export default function HeaderText() {
 
 	return (
 		< div className="flex justify-center items-start w-1/2">
-			<Image src="/images/hand.png" alt="" width={55} height={55} />
+			<Image src="/icons/waving-hand.svg" alt="" width={40} height={40} />
 			<div className="text-white pl-2.5 flex flex-col gap-4.5">
 				<h1 className="text-5xl">
 					{t.header.title}<span className={`${leckerli.className} text-pink-dark ml-1.5`}> Julie</span>
@@ -27,8 +27,9 @@ export default function HeaderText() {
 				<div className="flex gap-5 mt-2.5 items-end">
 					<Cta tag="a" text={t.header.contact} href="#footer" />
 					<Cta tag="a" text={t.header.cv} href="/CV_Julie_Deshayes.pdf" imageSrc="/images/arrow-button.png" altText="Flèche indiquant que le lien mène à une page externe" external />
-					<a href="https://github.com/Julie-Des" target="_blank" rel="noopener noreferrer" className="icon-btn inline-flex items-center justify-center w-7 h-7 rounded-full"> <GithubIcon className="w-7 h-7"/></a>
-					<a href="https://www.linkedin.com/in/julie-deshayes-21443727b" target="_blank" rel="noopener noreferrer" className="icon-btn inline-flex items-center justify-center w-7 h-7"><LinkedinIcon className="w-7 h-7"/></a>
+					<a href="https://www.linkedin.com/in/julie-deshayes-21443727b" target="_blank" rel="noopener noreferrer" className="icon-btn"><LinkedinIcon className="w-7 h-7"/></a>
+					<a href="https://github.com/Julie-Des" target="_blank" rel="noopener noreferrer" className="icon-btn rounded-full"> <GithubIcon className="w-7 h-7"/></a>
+					
 				</div>
 			</div>
 		</div>
