@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, ReactNode, useMemo } from "react";
+import { createContext, useContext, useState, useEffect, useMemo, useCallback, ReactNode } from "react";
 import fr from "../lang/fr.json";
 import en from "../lang/en.json";
 
@@ -9,13 +9,14 @@ type Translations = typeof fr;
 
 type TranslationContextType = {
   lang: Lang;
-  t: Translations;
+  t: Translations; // accès direct, ex : t.navbar.about
+  tr: (key: string) => string; // fonction, ex : tr("projects.card1.title")
   switchLang: (lang: Lang) => void;
 };
 
 const TranslationContext = createContext<TranslationContextType | undefined>(undefined);
 
-export function TranslationProvider({ children }: Readonly<{ children: ReactNode }>) {
+export function TranslationProvider({ children }: Readonly <{ children: ReactNode }>) {
   const [lang, setLang] = useState<Lang>("fr");
 
   useEffect(() => {
@@ -30,26 +31,22 @@ export function TranslationProvider({ children }: Readonly<{ children: ReactNode
 
   const translations = lang === "fr" ? fr : en;
 
-  const value = useMemo(
-    () => ({
-        lang,
-        t: translations,
-        switchLang,
-    }),
-    [lang, translations]
+  // fonction tr() pour traduire via une clé dynamique
+  const tr = useCallback(
+    (key: string) => {
+      const value = key.split(".").reduce((acc: any, k: string) => (acc ? acc[k] : undefined), translations);
+      return typeof value === "string" ? value : key;
+    },
+    [translations]
   );
 
-  return (
-    <TranslationContext.Provider value={value}>
-      {children}
-    </TranslationContext.Provider>
-  );
+  const value = useMemo(() => ({ lang, t: translations, tr, switchLang }), [lang, translations, tr]);
+
+  return <TranslationContext.Provider value={value}>{children}</TranslationContext.Provider>;
 }
 
 export function useTranslation() {
   const context = useContext(TranslationContext);
-  if (!context) {
-    throw new Error("useTranslation must be used within a TranslationProvider");
-  }
+  if (!context) throw new Error("useTranslation must be used within a TranslationProvider");
   return context;
 }

@@ -20,35 +20,30 @@
   },
   "projects": {
     "title": "My Projects",
+    "see": "See",
     "card1": {
       "title": "Creation of a real estate rental web application",
-      "technos": "React · React Router · Vite · Sass · CSS Animations",
-      "see": "See"
+      "technos": "React · React Router · Vite · Sass · CSS Animations"
     },
     "card2": {
       "title": "SEO optimization for a photographer's website",
-      "technos": "SEO · Accessibility · Google Lighthouse · Wave · Optimization Report",
-      "see": "See"
+      "technos": "SEO · Accessibility · Google Lighthouse · Wave · Optimization Report"
     },
     "card3": {
       "title": "Debugging an event agency’s website",
-      "technos": "DevTools · Unit Tests · Jest · Yarn · JavaScript",
-      "see": "See"
+      "technos": "DevTools · Unit Tests · Jest · Yarn · JavaScript"
     },
     "card4": {
       "title": "Building a dynamic web page with JavaScript",
-      "technos": "JavaScript · API · Node.js · Swagger",
-      "see": "See"
+      "technos": "JavaScript · API · Node.js · Swagger"
     },
     "card5": {
       "title": "Improving a mobile site interface with CSS animations",
-      "technos": "HTML · CSS Animations · Sass",
-      "see": "See"
+      "technos": "HTML · CSS Animations · Sass"
     },
     "card6": {
       "title": "Creating the homepage of a travel agency website",
-      "technos": "HTML · CSS",
-      "see": "See"
+      "technos": "HTML · CSS"
     }
   },
   "skills": {
