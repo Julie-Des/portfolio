@@ -26,10 +26,9 @@ export default function HeaderText() {
 				</p>
 				<div className="flex gap-5 mt-2.5 items-end">
 					<Cta tag="a" text={t.header.contact} href="#footer" />
-					<Cta tag="a" text={t.header.cv} href="/CV_Julie_Deshayes.pdf" imageSrc="/images/arrow-button.png" altText="Flèche indiquant que le lien mène à une page externe" external />
+					<Cta tag="a" text={t.header.cv} href="/CV_Julie_Deshayes.pdf" imageSrc="/icons/arrow-button.png" altText="Flèche indiquant que le lien mène à une page externe" external />
 					<a href="https://www.linkedin.com/in/julie-deshayes-21443727b" target="_blank" rel="noopener noreferrer" className="icon-btn"><LinkedinIcon className="w-7 h-7"/></a>
 					<a href="https://github.com/Julie-Des" target="_blank" rel="noopener noreferrer" className="icon-btn rounded-full"> <GithubIcon className="w-7 h-7"/></a>
-					
 				</div>
 			</div>
 		</div>
