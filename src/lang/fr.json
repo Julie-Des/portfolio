@@ -27,8 +27,28 @@
     },
     "card2" : {
         "title": "Optimisation du référencement d'un site de photographe",
-        "technos": "Google Lighthouse . SEO . Vite . Sass . Animations CSS",
-        "voir": "Voir"
+        "technos": "SEO . Accessibilité . Google Lighthouse . Wave . Rapport d'optimisation",
+        "see": "Voir"
+    },
+    "card3" : {
+        "title": "Débuggage du site d'une agence d'événementiel",
+        "technos": "DevTools . Tests unitaires . Jest . Yarn . JavaScript",
+        "see": "Voir"
+    },
+    "card4" : {
+        "title": "Création d'une page web dynamique avec JavaScript",
+        "technos": "JavaScript . API . Node.js . Swagger",
+        "see": "Voir"
+    },
+    "card5" : {
+      "title": "Amélioration de l'interface d'un site mobile avec des animations CSS",
+      "technos": "HTML . Animations CSS . Sass",
+      "see": "Voir"
+    },
+    "card6" : {
+      "title": "Création de la page d'accueil du site d'une agence de voyage",
+      "technos": "HTML . CSS",
+      "see": "Voir"
     }
   },
   "skills": {

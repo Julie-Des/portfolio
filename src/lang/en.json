@@ -6,33 +6,58 @@
     "contact": "Contact"
   },
   "header": {
-    "title": "Hello, I am",
-    "job1": "Frontend Developer",
-    "job2": "Integrator",
-    "objectiveLabel": "My goal :",
-    "objectiveText": "to bring modern, user-friendly, inclusive and environmentally-friendly websites to life",
+    "title": "Hello, I'm",
+    "job1": "Integrator",
+    "job2": "Front-end Developer",
+    "objectiveLabel": "My goal: ",
+    "objectiveText": "to bring modern, user-friendly, inclusive, and more environmentally conscious websites to life",
     "contact": "Contact me",
-    "cv": "My CV"
+    "cv": "My Resume"
   },
   "about": {
     "title": "About",
-    "text": "After working for 10 years in the field of occupational health, I felt the need to learn new things and express my creativity. Becoming a web developer quickly became obvious to me. I first trained on my own for a year, then started a degree program at OpenClassrooms in 2024. This portfolio is the final step of that journey, and I hope the first towards new professional adventures!"
+    "text": "After working 10 years in the occupational health sector, I felt the need to learn new things and express my creativity. Becoming a web developer quickly became an obvious choice. I first trained independently for a year, then started a certified program with OpenClassrooms in 2024. This portfolio is the final step of that program — and I hope the first step toward new professional adventures!"
   },
   "projects": {
     "title": "My Projects",
     "card1": {
-      "title": "Development of a real estate rental web application",
-      "technos": "React . React Router . Vite . Sass . CSS Animations",
-      "voir": "View"
+      "title": "Creation of a real estate rental web application",
+      "technos": "React · React Router · Vite · Sass · CSS Animations",
+      "see": "See"
+    },
+    "card2": {
+      "title": "SEO optimization for a photographer's website",
+      "technos": "SEO · Accessibility · Google Lighthouse · Wave · Optimization Report",
+      "see": "See"
+    },
+    "card3": {
+      "title": "Debugging an event agency’s website",
+      "technos": "DevTools · Unit Tests · Jest · Yarn · JavaScript",
+      "see": "See"
+    },
+    "card4": {
+      "title": "Building a dynamic web page with JavaScript",
+      "technos": "JavaScript · API · Node.js · Swagger",
+      "see": "See"
+    },
+    "card5": {
+      "title": "Improving a mobile site interface with CSS animations",
+      "technos": "HTML · CSS Animations · Sass",
+      "see": "See"
+    },
+    "card6": {
+      "title": "Creating the homepage of a travel agency website",
+      "technos": "HTML · CSS",
+      "see": "See"
     }
   },
   "skills": {
     "title": "My Skills",
-    "text1": "Frontend & Design",
+    "text1": "Front-end & Design",
     "text2": "Tools & Methods"
   },
   "contact": {
-    "title": "Contact Me",
+    "title": "Get in Touch",
     "inputName": "Your name",
     "inputEmail": "Your email",
     "inputMessage": "Your message",
