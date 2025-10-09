@@ -57,7 +57,7 @@ html {
 }
 
 .title {
-	@apply font-bold text-3xl text-green mb-7;
+	@apply font-bold text-3xl text-green mb-7 px-5;
 }
 
 

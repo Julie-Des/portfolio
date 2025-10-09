@@ -17,7 +17,7 @@ export default function ProjectCard({ title, technos, image, logo, github, link 
 
 	return (
 		<div>
-			<div className="relative overflow-hidden border-4 border-[#f9cada] rounded-[15px] shadow-md cursor-pointer group h-[240px]">
+			<div className="relative overflow-hidden border-4 border-[#f9cada] rounded-[15px] shadow-md group h-[240px]">
 				<Image
 					src={image}
 					alt={title}
@@ -53,9 +53,17 @@ export default function ProjectCard({ title, technos, image, logo, github, link 
 				  </div>
 			  </div>
       </div>
-				<div className="mt-4 flex justify-center">
-					<Image src={logo} alt={`${title} logo`} width={150} height={35} className="object-contain" />
-				</div>
-		</div>
+        <div className="flex justify-center">
+          <div className="relative h-[25px] w-[220px] mt-4">
+            <Image
+              src={logo}
+              alt={`${title} logo`}
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 100vw, 220px"
+            />
+          </div>
+        </div>
+    </div>
 	);
 }
