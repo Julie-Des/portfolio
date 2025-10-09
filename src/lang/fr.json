@@ -22,12 +22,12 @@
     "title": "Mes projets",
     "see": "Voir",
     "card1" : {
-        "title": "Création d'une application web de location immoblilière",
+        "title": "Création d'une application web de location immobilière",
         "technos": "React . React-router . Vite . Sass . Animations CSS"
     },
     "card2" : {
         "title": "Optimisation du référencement d'un site de photographe",
-        "technos": "SEO . Accessibilité . Google Lighthouse . Wave . Rapport d'optimisation"
+        "technos": "SEO . Accessibilité . Lighthouse . Wave"
     },
     "card3" : {
         "title": "Débuggage du site d'une agence d'événementiel",

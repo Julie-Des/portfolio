@@ -9,8 +9,8 @@ type Translations = typeof fr;
 
 type TranslationContextType = {
   lang: Lang;
-  t: Translations; // accès direct, ex : t.navbar.about
-  tr: (key: string) => string; // fonction, ex : tr("projects.card1.title")
+  t: Translations;
+  tr: (key: string) => string;
   switchLang: (lang: Lang) => void;
 };
 
