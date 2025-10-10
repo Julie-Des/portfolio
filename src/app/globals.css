@@ -60,6 +60,10 @@ html {
 	@apply font-bold text-3xl text-green mb-7 px-5;
 }
 
+.logo-techno {
+	@apply w-auto h-auto object-contain transition-transform duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_#f9cada]
+}
+
 
 
 
