@@ -38,7 +38,7 @@ export default function ProjectCard({ title, technos, image, logo, github, link 
 					<h3 className="text-white text-xl mb-2">{title}</h3>
 					<p className="text-[#f9cada] mb-4">{technos}</p>
 					<div className="flex gap-4 items-center justify-end">
-						<a href={github} target="_blank" rel="noopener noreferrer" className="icon-btn rounded-full">
+						<a href={github} target="_blank" rel="noopener noreferrer" className="icon-social rounded-full">
 							<GithubIcon className="w-8 h-8" />
 						</a>
 
