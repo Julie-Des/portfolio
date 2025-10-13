@@ -35,7 +35,7 @@
     },
     "card4" : {
         "title": "Création d'une page web dynamique avec JavaScript",
-        "technos": "JavaScript . API . Node.js . Swagger"
+        "technos": "JavaScript . API Rest. Node.js . Swagger"
     },
     "card5" : {
       "title": "Amélioration de l'interface d'un site mobile avec des animations CSS",
