@@ -1,7 +1,7 @@
 {
   "navbar": {
     "about": "About",
-    "projects": "My Projects",
+    "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact"
   },
@@ -19,7 +19,7 @@
     "text": "After working 10 years in the occupational health sector, I felt the need to learn new things and express my creativity. Becoming a web developer quickly became an obvious choice. I first trained independently for a year, then started a certified program with OpenClassrooms in 2024. This portfolio is the final step of that program — and I hope the first step toward new professional adventures!"
   },
   "projects": {
-    "title": "My Projects",
+    "title": "My projects",
     "see": "See",
     "card1": {
       "title": "Creation of a real estate rental web application",
@@ -47,16 +47,18 @@
     }
   },
   "skills": {
-    "title": "My Skills",
+    "title": "My skills",
     "text1": "Front-end & Design",
     "text2": "Tools & Methods"
   },
   "contact": {
     "title": "Get in Touch",
-    "inputName": "Your name",
-    "inputEmail": "Your email",
-    "inputMessage": "Your message",
-    "submitButton": "Send"
+    "nameLabel": "Your name",
+    "emailLabel": "Your email",
+    "messageLabel": "Your message",
+    "submit": "Send",
+    "success": "Thank you! Your message has been sent.",
+    "error": "An error has occurred, please try again."
   },
   "footer": {
     "name": "Julie Deshayes",

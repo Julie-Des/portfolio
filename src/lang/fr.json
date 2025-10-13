@@ -1,7 +1,7 @@
 {
   "navbar": {
     "about": "À propos",
-    "projects": "Mes Projets",
+    "projects": "Projets",
     "skills": "Compétences",
     "contact": "Contact"
   },
@@ -47,16 +47,18 @@
     }
   },
   "skills": {
-    "title" : "Mes Compétences",
+    "title" : "Mes compétences",
     "text1" : "Front-end & conception",
     "text2" : "Outils & méthodes"
   },
   "contact": {
     "title": "Me contacter",
-    "inputName": "Votre nom",
-    "inputEmail": "Votre email",
-    "inputMessage": "Votre message",
-    "submitButton": "Envoyer"
+    "nameLabel": "Votre nom",
+    "emailLabel": "Votre email",
+    "messageLabel": "Votre message",
+    "submit": "Envoyer",
+    "success": "Merci ! Votre message a bien été envoyé.",
+    "error": "Une erreur est sruvenue, veuillez réessayer."
   },
   "footer": {
     "name": "Julie Deshayes",
