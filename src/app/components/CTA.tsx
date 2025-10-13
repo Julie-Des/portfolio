@@ -29,7 +29,7 @@ export default function Cta({
   external = false,
   disabled = false, // 👈 valeur par défaut
 }: ButtonProps) {
-  const baseClasses = `btn ${disabled ? "cursor-default" : ""}`;
+  const baseClasses = `btn ${disabled ? "cursor-default" : "cursor-pointer"}`;
 
   // Image à côté du texte
   let sideElement = null;

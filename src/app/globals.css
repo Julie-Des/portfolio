@@ -64,6 +64,14 @@ html {
 	@apply w-auto h-auto object-contain transition-transform duration-300 hover:scale-110
 }
 
+.label-form {
+	@apply block text-pink-dark mb-2
+}
+
+.input-form {
+	@apply w-full bg-white border border-white rounded-lg p-2 focus:outline-none focus:ring-3 focus:ring-pink-dark
+}
+
 
 
 
