@@ -1,0 +1,18 @@
+{
+  "leftColumn": [
+    { "src": "/images/logos/skills/react.png", "alt": "React" },
+    { "src": "/images/logos/skills/vitejs.png", "alt": "Vite" },
+    { "src": "/images/logos/skills/redux.png", "alt": "Redux" },
+    { "src": "/images/logos/skills/sass.png", "alt": "Sass" },
+    { "src": "/images/logos/skills/tailwind.png", "alt": "Tailwind CSS", "width": 100 },
+    { "src": "/images/logos/skills/figma.png", "alt": "Figma" }
+  ],
+  "rightColumn": [
+    { "src": "/images/logos/skills/github.png", "alt": "GitHub" },
+    { "src": "/images/logos/skills/git.png", "alt": "Git" },
+    { "src": "/images/logos/skills/swagger.png", "alt": "Swagger", "width": 100 },
+    { "src": "/images/logos/skills/next.png", "alt": "Next.js" },
+    { "src": "/images/logos/skills/agile.png", "alt": "Méthode agile" },
+    { "src": "/images/logos/skills/seo.png", "alt": "S E O" }
+  ]
+}
