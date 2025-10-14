@@ -46,24 +46,24 @@ export default function ProjectCard({ title, technos, image, logo, github, link 
 							tag="a"
 							text={t.projects.see}
 							href={link}
-							imageSrc="/images/arrow-button.png"
+							imageSrc="/icons/arrow-button.png"
 							altText="Lien vers le projet"
 							external
 						/>
-				  </div>
-			  </div>
-      </div>
-        <div className="flex justify-center">
-          <div className="relative h-[25px] w-[220px] mt-4">
-            <Image
-              src={logo}
-              alt={`${title} logo`}
-              fill
-              className="object-contain"
-              sizes="(max-width: 768px) 100vw, 220px"
-            />
-          </div>
-        </div>
-    </div>
+					</div>
+				</div>
+			</div>
+			<div className="flex justify-center">
+				<div className="relative h-[25px] w-[220px] mt-4">
+					<Image
+						src={logo}
+						alt={`${title} logo`}
+						fill
+						className="object-contain"
+						sizes="(max-width: 768px) 100vw, 220px"
+					/>
+				</div>
+			</div>
+		</div>
 	);
 }

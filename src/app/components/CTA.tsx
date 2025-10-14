@@ -14,7 +14,7 @@ type ButtonProps = Readonly<{
   altText?: string;
   imageElement?: ReactNode;
   external?: boolean;
-  disabled?: boolean; // 👈 nouvelle prop
+  disabled?: boolean;
 }>;
 
 export default function Cta({
@@ -43,6 +43,7 @@ export default function Cta({
         width={20}
         height={20}
         className="w-[20px] h-[20px]"
+        unoptimized
       />
     );
   }

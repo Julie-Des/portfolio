@@ -50,7 +50,7 @@ html {
 }
 
 .icon-social {
-	@apply text-[#f9cada] bg-transparent box-border
+	@apply text-[#f9cada] rounded-full bg-transparent box-border
          transition duration-300 ease-in-out
          hover:text-[#f6b8cd] hover:shadow-[0_4px_15px_rgba(249,202,218,0.5)]
 		 inline-flex items-center justify-center w-7 h-7;

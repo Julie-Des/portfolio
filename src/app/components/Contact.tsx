@@ -5,7 +5,7 @@ import { useTranslation } from "@/context/TranslationContext";
 import Cta from "./CTA";
 import GithubIcon from "./icons/GithubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
-import Image from "next/image";
+import EmailIcon from "./icons/EmailIcon";
 
 export default function Contact() {
 	const { t } = useTranslation();
@@ -45,15 +45,12 @@ export default function Contact() {
 	};
 
 	return (
-		<section
-			id="contact"
-			className="bg-green pt-10 pb-10 flex flex-col items-center px-40 relative scroll-mt-[104]"
-		>
+		<section id="contact" className="bg-green pt-10 pb-10 flex flex-col items-center px-40 relative scroll-mt-[104]">
 			<h2 className="font-bold text-3xl text-pink-dark mb-10">{t.contact.title}</h2>
 
 			<form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-md">
 				<div>
-                    <label htmlFor="name" className="label-form">
+					<label htmlFor="name" className="label-form">
 						{t.contact.nameLabel}
 					</label>
 					<input
@@ -98,19 +95,34 @@ export default function Contact() {
 				</div>
 
 				<div className="mt-4 flex justify-center">
-					<Cta tag="button" type="submit" text={t.contact.submit} disabled={status === "loading"}/>
+					<Cta tag="button" type="submit" text={t.contact.submit} disabled={status === "loading"} />
 				</div>
 
 				{status === "success" && <p className="text-green-600 text-center mt-2">{t.contact.success}</p>}
 				{status === "error" && <p className="text-red-600 text-center mt-2">{t.contact.error}</p>}
 			</form>
-            <div className="flex gap-2 mt-2.5">
-                 <a href="mailto:julie.deshayes14@gmail.com" className="icon-social rounded-full" aria-label="Envoyer un e-mail">
-                    <Image src="/icons/mail.png" width={36} height={28} alt="Mail" className="w-auto h-auto"/>
-                </a>
-                <a href="https://www.linkedin.com/in/julie-deshayes-21443727b" target="_blank" rel="noopener noreferrer" className="icon-social"><LinkedinIcon className="w-auto h-auto"/></a>
-                <a href="https://github.com/Julie-Des" target="_blank" rel="noopener noreferrer" className="icon-social rounded-full"> <GithubIcon className="w-auto h-auto"/></a>
-            </div>
+			<div className="flex gap-4 mt-4">
+				<a
+					href="mailto:julie.deshayes14@gmail.com"
+					rel="noopener noreferrer"
+					className="icon-social"
+					aria-label="Envoyer un e-mail"
+				>
+					<EmailIcon className="w-7 h-7" />
+				</a>
+				<a
+					href="https://www.linkedin.com/in/julie-deshayes-21443727b"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="icon-social"
+				>
+					<LinkedinIcon className="w-7 h-7" />
+				</a>
+				<a href="https://github.com/Julie-Des" target="_blank" rel="noopener noreferrer" className="icon-social">
+					{" "}
+					<GithubIcon className="w-7 h-7" />
+				</a>
+			</div>
 		</section>
 	);
 }
