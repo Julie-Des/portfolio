@@ -13,7 +13,7 @@ export default function Projects() {
 			
 			<div className="relative">
 				<h2 className="title">{t.projects.title}</h2>
-				<Image src="/icons/arrow-pink.png" alt="" width={83} height={83} className="absolute left-[-100px] top-[-10px] rotate-[144deg]"/>
+				<Image src="/icons/arrow-pink.png" alt="" width={100} height={100} className="absolute left-[-100px] top-[-10px] rotate-[144deg]"/>
 			</div>
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-[1200px] pt-2.5">
 				{projectsData.map((project) => (

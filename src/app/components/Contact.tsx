@@ -6,6 +6,7 @@ import Cta from "./CTA";
 import GithubIcon from "./icons/GithubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
 import EmailIcon from "./icons/EmailIcon";
+import Image from "next/image";
 
 export default function Contact() {
 	const { t } = useTranslation();
@@ -45,9 +46,11 @@ export default function Contact() {
 	};
 
 	return (
-		<section id="contact" className="bg-green pt-10 pb-10 flex flex-col items-center px-40 relative scroll-mt-[104]">
-			<h2 className="font-bold text-3xl text-pink-dark mb-10">{t.contact.title}</h2>
-
+		<section id="contact" className="bg-green pt-10 pb-8 flex flex-col items-center px-40 scroll-mt-[104]">
+			<div className="relative">
+				<h2 className="font-bold text-3xl text-pink-dark mb-10">{t.contact.title}</h2>
+				<Image src="/icons/arrow-pink.png" alt="" width={83} height={83} className="absolute rotate-45 left-[-300px] top-0"/>
+			</div>
 			<form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-md">
 				<div>
 					<label htmlFor="name" className="label-form">
@@ -98,10 +101,10 @@ export default function Contact() {
 					<Cta tag="button" type="submit" text={t.contact.submit} disabled={status === "loading"} />
 				</div>
 
-				{status === "success" && <p className="text-green-600 text-center mt-2">{t.contact.success}</p>}
+				{status === "success" && <p className="text-pink-dark text-center mt-2">{t.contact.success}</p>}
 				{status === "error" && <p className="text-red-600 text-center mt-2">{t.contact.error}</p>}
 			</form>
-			<div className="flex gap-4 mt-4">
+			<div className="flex gap-4 mt-5">
 				<a
 					href="mailto:julie.deshayes14@gmail.com"
 					rel="noopener noreferrer"
@@ -115,11 +118,11 @@ export default function Contact() {
 					target="_blank"
 					rel="noopener noreferrer"
 					className="icon-social"
+					aria-label="Profil LinkedIn - ouvre un nouvel onglet"
 				>
 					<LinkedinIcon className="w-7 h-7" />
 				</a>
-				<a href="https://github.com/Julie-Des" target="_blank" rel="noopener noreferrer" className="icon-social">
-					{" "}
+				<a href="https://github.com/Julie-Des" target="_blank" rel="noopener noreferrer" className="icon-social" aria-label="Profil Github - ouvre un nouvel onglet">
 					<GithubIcon className="w-7 h-7" />
 				</a>
 			</div>
