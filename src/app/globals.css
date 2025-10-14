@@ -72,6 +72,10 @@ html {
 	@apply w-full bg-white border border-white rounded-lg p-2 focus:outline-none focus:ring-3 focus:ring-pink-dark
 }
 
+.span-footer {
+	@apply text-pink-dark font-bold
+}
+
 
 
 

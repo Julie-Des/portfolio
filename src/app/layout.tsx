@@ -1,6 +1,7 @@
 import { poppins, leckerli } from "./fonts";
 import type { Metadata } from "next";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import { TranslationProvider } from "@/context/TranslationContext";
 import "./globals.css";
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 				<TranslationProvider>
 					<Nav />
 					{children}
+					<Footer />
 				</TranslationProvider>
 			</body>
 		</html>
