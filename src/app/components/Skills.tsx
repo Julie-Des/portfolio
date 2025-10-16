@@ -26,7 +26,7 @@ export default function Skills() {
 	return (
 		<section
 			id="skills"
-			className="bg-gradient-to-b from-[#FBEFF3] to-[#FDFDFD] pt-10 pb-10 flex flex-col items-center px-10 relative scroll-mt-[104]"
+			className="bg-gradient-to-b from-[#FBEFF3] to-[#FDFDFD] pt-10 pb-10 px-40 flex flex-col items-center px-10 relative scroll-mt-[104]"
 		>
 			<h2 className="title mb-10">{t.skills.title}</h2>
 
