@@ -8,7 +8,7 @@ export default function Nav() {
 
 	return (
 		<>
-			<nav className="text-white lg:text-xl flex justify-between items-center bg-green pt-6 pb-6 px-6 sm:px-8 md:px-12 md:fixed right-0 left-0 top-0 z-50">
+			<nav className="text-white lg:text-xl flex justify-between items-center bg-green pt-6 pb-6 px-6 sm:px-8 md:px-15 md:fixed right-0 left-0 top-0 z-50">
 				<a
 					href="#header"
 					className={`${leckerli.className} text-4xl md:text-5xl text-pink-dark`}
@@ -19,7 +19,7 @@ export default function Nav() {
 				{/* Tablet and desktop */}
 				<ul className="hidden md:flex gap-12 items-center pt-[15px]">
 					<li>
-						<a href="#about" className="nav-link active:text-pink-dark">
+						<a href="#about" className="nav-link hover:text-pink-dark">
 							{t.navbar.about}
 						</a>
 					</li>
@@ -44,7 +44,7 @@ export default function Nav() {
 				<div className="flex gap-2">
 					<button
 						onClick={() => switchLang("fr")}
-						className={`hover:text-pink-dark ${
+						className={`hover:text-pink-dark cursor-pointer ${
 							lang === "fr" ? "text-pink-dark font-bold" : ""
 						}`}
 					>
@@ -53,7 +53,7 @@ export default function Nav() {
 					<p>|</p>
 					<button
 						onClick={() => switchLang("en")}
-						className={`hover:text-pink-dark ${
+						className={`hover:text-pink-dark cursor-pointer ${
 							lang === "en" ? "text-pink-dark font-bold" : ""
 						}`}
 					>
@@ -63,7 +63,7 @@ export default function Nav() {
 			</nav>
 
 			{/* Mobile */}
-			<ul className="fixed w-full bottom-0 left-0 right-0 bg-green text-white flex justify-around items-center py-3 text-sm border-t border-pink-dark md:hidden z-50 overflow-hidden">
+			<ul className="fixed w-full bottom-0 left-0 right-0 bg-green text-white flex justify-around items-center py-3 px-4 text-sm border-t border-pink-dark md:hidden z-50 overflow-hidden">
 				<li>
 					<a href="#about" className="nav-link hover:text-pink-dark flex flex-col items-center">
 						{t.navbar.about}

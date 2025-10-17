@@ -11,30 +11,32 @@ export default function HeaderText() {
 	const { t } = useTranslation();
 
 	return (
-		<div className="flex justify-center items-start w-1/2">
-			<Image src="/icons/waving-hand.svg" alt="" width={40} height={40} />
-			<div className="text-white pl-2.5 flex flex-col gap-4.5">
-				<h1 className="text-5xl">
+		<div className="flex justify-center items-start max-w-[890px]">
+			<Image src="/icons/waving-hand.svg" alt="" width={40} height={40} className="hidden sm:block"/>
+			<div className="text-white text-center sm:text-left sm:pl-2.5 flex flex-col gap-5 lg:gap-4.5">
+				<h1 className="text-4xl xl:text-5xl">
 					{t.header.title}
 					<span className={`${leckerli.className} text-pink-dark ml-1.5`}> Julie</span>
 				</h1>
-				<p className="text-3xl">
+				<p className="text-2xl xl:text-3xl">
 					{t.header.job1} <span className="text-pink-dark">&</span> {t.header.job2}
 				</p>
-				<p className="text-xl">
+				<p className="text-lg xl:text-xl">
 					<span className="text-pink-dark font-semibold"> {t.header.objectiveLabel} </span> {t.header.objectiveText}
 				</p>
-				<div className="flex gap-5 mt-2.5 items-end">
-					<Cta tag="a" text={t.header.contact} href="#footer" />
-					<Cta
-						tag="a"
-						text={t.header.cv}
-						href="/CV_Julie_Deshayes.pdf"
-						imageSrc="/icons/arrow-button.png"
-						altText="Flèche indiquant que le lien mène à une page externe"
-						external
-					/>
-					<div className="flex gap-3">
+				<div className="flex flex-col sm:flex-row sm:items-end gap-5 mt-2.5 relative">
+					<div className="flex justify-center sm:justify-normal gap-5">
+						<Cta tag="a" text={t.header.contact} href="#footer" />
+						<Cta
+							tag="a"
+							text={t.header.cv}
+							href="/CV_Julie_Deshayes.pdf"
+							imageSrc="/icons/arrow-button.png"
+							altText="Flèche indiquant que le lien mène à une page externe"
+							external
+						/>
+					</div>
+					<div className="flex flex-col pl-4 sm:flex-row gap-3 absolute bottom-[-100px] sm:relative sm:bottom-0 sm:pl-0">
 						<a
 							href="https://www.linkedin.com/in/julie-deshayes-21443727b"
 							target="_blank"
