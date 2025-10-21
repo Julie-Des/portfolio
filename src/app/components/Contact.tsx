@@ -5,7 +5,6 @@ import { useTranslation } from "@/context/TranslationContext";
 import Cta from "./CTA";
 import GithubIcon from "./icons/GithubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
-import EmailIcon from "./icons/EmailIcon";
 import Image from "next/image";
 
 export default function Contact() {
@@ -46,10 +45,10 @@ export default function Contact() {
 	};
 
 	return (
-		<section id="contact" className="bg-green pt-10 pb-8 flex flex-col items-center px-40 scroll-mt-[104]">
+		<section id="contact" className="bg-green pt-10 pb-8 flex flex-col items-center px-10 md:px-20 lg:px-40 scroll-mt-[104]">
 			<div className="relative">
-				<h2 className="font-bold text-3xl text-pink-dark mb-10">{t.contact.title}</h2>
-				<Image src="/icons/arrow-pink.png" alt="" width={83} height={83} className="absolute rotate-45 left-[-300px] top-0"/>
+				<h2 className="font-bold text-2xl md:text-3xl text-pink-dark mb-10">{t.contact.title}</h2>
+				<Image src="/icons/arrow-pink.png" alt="" width={80} height={80} className="absolute rotate-45 left-[-80px] md:left-[-250px] lg:left-[-300px] top-[-15px] w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"/>
 			</div>
 			<form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-md">
 				<div>
@@ -105,14 +104,6 @@ export default function Contact() {
 				{status === "error" && <p className="text-red-600 text-center mt-2">{t.contact.error}</p>}
 			</form>
 			<div className="flex gap-4 mt-5">
-				<a
-					href="mailto:julie.deshayes14@gmail.com"
-					rel="noopener noreferrer"
-					className="icon-social"
-					aria-label="Envoyer un e-mail"
-				>
-					<EmailIcon className="w-7 h-7" />
-				</a>
 				<a
 					href="https://www.linkedin.com/in/julie-deshayes-21443727b"
 					target="_blank"

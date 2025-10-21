@@ -53,9 +53,9 @@
   },
   "contact": {
     "title": "Me contacter",
-    "nameLabel": "Votre nom",
-    "emailLabel": "Votre email",
-    "messageLabel": "Votre message",
+    "nameLabel": "Votre nom*",
+    "emailLabel": "Votre email*",
+    "messageLabel": "Votre message*",
     "submit": "Envoyer",
     "success": "Merci ! Votre message a bien été envoyé.",
     "error": "Une erreur est survenue, veuillez réessayer."
