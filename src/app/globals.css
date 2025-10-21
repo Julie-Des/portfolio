@@ -45,7 +45,7 @@ html {
 }
 
 .btn {
-	@apply bg-[#f9cada] text-[#1b4332] px-6 py-3 rounded-[30px] font-bold no-underline 
+	@apply bg-[#f9cada] text-[#1b4332] px-5 py-3 rounded-[30px] font-bold no-underline text-sm sm:text-base
          transition-all duration-300 ease-in-out 
          hover:bg-[#f6b8cd] hover:shadow-[0_4px_15px_rgba(249,202,218,0.5)]
          flex items-center justify-center gap-2;
