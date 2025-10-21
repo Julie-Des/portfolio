@@ -52,7 +52,7 @@ export default function Skills() {
 						alt=""
 						width={80}
 						height={80}
-						className="absolute top-[-20] left-[-40] rotate-[85deg] lg:static"
+						className="absolute top-[-20] left-[-40] rotate-[85deg] lg:rotate-[25deg] lg:static w-16 h-16 xl:w-20 xl:h-20"
 					/>
 					<Image
 						src="/images/logos/skills/computer.png"
@@ -66,7 +66,7 @@ export default function Skills() {
 						alt=""
 						width={80}
 						height={80}
-						className="absolute bottom-[-20] right-[-40] rotate-[-90deg] lg:static"
+						className="absolute bottom-[-20] right-[-40] rotate-[-90deg] lg:rotate-[-160deg] lg:static w-16 h-16 xl:w-20 xl:h-20"
 					/>
 				</div>
 

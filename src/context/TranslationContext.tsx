@@ -16,7 +16,7 @@ type TranslationContextType = {
 
 const TranslationContext = createContext<TranslationContextType | undefined>(undefined);
 
-export function TranslationProvider({ children }: Readonly <{ children: ReactNode }>) {
+export function TranslationProvider({ children }: Readonly<{ children: ReactNode }>) {
   const [lang, setLang] = useState<Lang>("fr");
 
   useEffect(() => {
@@ -31,16 +31,29 @@ export function TranslationProvider({ children }: Readonly <{ children: ReactNod
 
   const translations = lang === "fr" ? fr : en;
 
-  // fonction tr() pour traduire via une clé dynamique
+  // function to translate via a key of the type "home.header.title""
   const tr = useCallback(
-    (key: string) => {
-      const value = key.split(".").reduce((acc: any, k: string) => (acc ? acc[k] : undefined), translations);
-      return typeof value === "string" ? value : key;
+    (key: string): string => {
+      const parts = key.split(".");
+      let current: unknown = translations; // we start from the root object (fr or en)
+
+      for (const part of parts) {
+        if (current && typeof current === "object" && part in current) {
+          current = (current as Record<string, unknown>)[part];
+        } else {
+          return key;
+        }
+      }
+
+      return typeof current === "string" ? current : key;
     },
     [translations]
   );
 
-  const value = useMemo(() => ({ lang, t: translations, tr, switchLang }), [lang, translations, tr]);
+  const value = useMemo(
+    () => ({ lang, t: translations, tr, switchLang }),
+    [lang, translations, tr]
+  );
 
   return <TranslationContext.Provider value={value}>{children}</TranslationContext.Provider>;
 }
