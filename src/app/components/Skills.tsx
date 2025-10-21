@@ -17,7 +17,7 @@ export default function Skills() {
 					alt={logo.alt}
 					width={logo.width ?? 70}
 					height={55}
-					className="logo-techno"
+					className="logo-techno w-[50px] h-[35px] sm:w-[70px] sm:h-[55px] object-contain"
 				/>
 			))}
 		</div>
@@ -26,15 +26,14 @@ export default function Skills() {
 	return (
 		<section
 			id="skills"
-			className="bg-gradient-to-b from-[#FBEFF3] to-[#FDFDFD] pt-10 pb-10 px-40 flex flex-col items-center relative scroll-mt-[104]"
+			className="bg-gradient-to-b from-[#FBEFF3] to-[#FDFDFD] pt-12 pb-12 px-10 md:px-12 flex flex-col items-center relative scroll-mt-[104]"
 		>
 			<h2 className="title mb-10">{t.skills.title}</h2>
 
-			<div className="grid grid-cols-3 place-items-center gap-4">
+			<div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-8">
 				{/* left column */}
-				<div className="max-w-2xl w-[275px]">
-					{renderLogoGrid(skillsData.leftColumn)}
-					<div className="mt-4">
+				<div className="w-full max-w-[280px] flex flex-col-reverse lg:flex-col">
+					<div className="mt-4 lg:mt-0 lg:mb-4">
 						<Cta
 							tag="div"
 							text={t.skills.text1}
@@ -43,36 +42,38 @@ export default function Skills() {
 							disabled
 						/>
 					</div>
+					{renderLogoGrid(skillsData.leftColumn)}
 				</div>
 
 				{/* center */}
-				<div className="relative">
+				<div className="flex items-center justify-center relative max-w-[400px]">
 					<Image
 						src="/icons/arrow-green-right.png"
 						alt=""
 						width={80}
 						height={80}
-						className="absolute bottom-0 left-[-40px]"
+						className="absolute top-[-20] left-[-40] rotate-[85deg] lg:static"
 					/>
 					<Image
 						src="/images/logos/skills/computer.png"
 						alt="Ordinateur affichant les logos H T M L, C S S, JavaScript et TypeScript"
 						width={375}
 						height={375}
-						className="logo-techno"
+						className="logo-techno w-[220px] sm:w-[280px] md:w-[375px] h-auto object-contain"
 					/>
 					<Image
 						src="/icons/arrow-green-right.png"
 						alt=""
 						width={80}
 						height={80}
-						className="absolute top-[-10px] right-[-40px] rotate-180"
+						className="absolute bottom-[-20] right-[-40] rotate-[-90deg] lg:static"
 					/>
 				</div>
 
 				{/* right column */}
-				<div className="max-w-2xl w-[275px]">
-					<div className="mb-4">
+				<div className="w-full max-w-[280px] flex flex-col-reverse lg:flex-col">
+				{renderLogoGrid(skillsData.rightColumn)}
+					<div className="mb-4 lg:mb-0 lg:mt-4">
 						<Cta
 							tag="div"
 							text={t.skills.text2}
@@ -81,7 +82,6 @@ export default function Skills() {
 							disabled
 						/>
 					</div>
-					{renderLogoGrid(skillsData.rightColumn)}
 				</div>
 			</div>
 		</section>

@@ -27,7 +27,7 @@ export default function Cta({
   altText,
   imageElement,
   external = false,
-  disabled = false, // 👈 valeur par défaut
+  disabled = false,
 }: ButtonProps) {
   const baseClasses = `btn ${disabled ? "cursor-default" : "cursor-pointer"}`;
 
