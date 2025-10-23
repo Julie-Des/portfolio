@@ -48,14 +48,16 @@ export default function ProjectCard({
 
 				{/* Overlay */}
 				<div
-					className={`absolute inset-0 flex flex-col bg-green/90 transition-all duration-500 ease-in-out p-6 text-left ${
+					className={`absolute inset-0 flex flex-col bg-green/90 transition-all duration-500 ease-in-out p-4 text-left justify-between ${
 						isActive
 							? "opacity-100 translate-y-0"
 							: "opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0"
 					}`}
 				>
-					<h3 className="text-white text-xl mb-2">{title}</h3>
-					<p className="text-pink-dark mb-4">{technos}</p>
+					<div>
+						<h3 className="text-white text-xl mb-2">{title}</h3>
+						<p className="text-pink-dark mb-4">{technos}</p>
+					</div>
 					<div className="flex gap-4 items-center justify-end">
 						<a
 							href={github}

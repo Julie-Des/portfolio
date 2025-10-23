@@ -20,7 +20,7 @@ export default function Projects() {
 	return (
 		<section
 			id="projects"
-			className="bg-white pt-12 pb-12 flex flex-col items-center px-10 md:px-20 lg:px-40 scroll-mt-[104]"
+			className="bg-white pt-12 pb-12 flex flex-col items-center px-10 sm:px-20 lg:px-30 scroll-mt-[104]"
 		>
 			<div className="relative">
 				<h2 className="title">{t.projects.title}</h2>
@@ -33,7 +33,7 @@ export default function Projects() {
 				/>
 			</div>
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 w-full max-w-[1200px] pt-2.5">
+			<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 w-full max-w-[1200px] pt-2.5">
 				{projectsData.map((project) => (
 					<ProjectCard
 						key={project.id}
