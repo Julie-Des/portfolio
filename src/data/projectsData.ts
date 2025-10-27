@@ -34,7 +34,7 @@ export const projectsData: ProjectData[] = [
     image: "/images/projects/724-events.webp",
     logo: "/images/logos/724-events-logo.png",
     github: "https://github.com/Julie-Des/Projet9-oc",
-    link: "#",
+    link: "https://projet9-oc-724events.vercel.app/",
   },
   {
     id: 4,
