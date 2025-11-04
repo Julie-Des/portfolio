@@ -29,7 +29,7 @@ export default function Skills() {
 			id="skills"
 			className="bg-gradient-to-b from-[#FBEFF3] to-[#FDFDFD] pt-12 pb-12 px-10 md:px-12 flex flex-col items-center relative scroll-mt-[104]"
 		>
-			<h2 className="title mb-10">{t.skills.title}</h2>
+			<h3 className="title mb-10">{t.skills.title}</h3>
 
 			<div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-8">
 				{/* left column */}

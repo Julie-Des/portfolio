@@ -23,7 +23,7 @@ export default function Projects() {
 			className="bg-white pt-12 pb-12 flex flex-col items-center px-10 sm:px-20 lg:px-30 scroll-mt-[104]"
 		>
 			<div className="relative">
-				<h2 className="title">{t.projects.title}</h2>
+				<h3 className="title">{t.projects.title}</h3>
 				<Image
 					src="/icons/arrow-pink.png"
 					alt=""

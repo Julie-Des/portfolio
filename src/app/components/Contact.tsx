@@ -50,7 +50,7 @@ export default function Contact() {
 			className="bg-green pt-10 pb-8 flex flex-col items-center px-10 md:px-20 lg:px-40 scroll-mt-[104]"
 		>
 			<div className="relative">
-				<h2 className="font-bold text-2xl md:text-3xl text-pink-dark mb-10">{t.contact.title}</h2>
+				<h3 className="font-bold text-2xl md:text-3xl text-pink-dark mb-10">{t.contact.title}</h3>
 				<Image
 					src="/icons/arrow-pink.png"
 					alt=""

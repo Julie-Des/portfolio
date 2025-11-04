@@ -18,9 +18,9 @@ export default function HeaderText() {
 					{t.header.title}
 					<span className={`${leckerli.className} text-pink-dark ml-1.5`}> Julie</span>
 				</h1>
-				<p className="text-2xl xl:text-3xl">
+				<h2 className="text-2xl xl:text-3xl">
 					{t.header.job1} <span className="text-pink-dark">&</span> {t.header.job2}
-				</p>
+				</h2>
 				<p className="text-lg xl:text-xl">
 					<span className="text-pink-dark font-semibold"> {t.header.objectiveLabel} </span> {t.header.objectiveText}
 				</p>
@@ -32,7 +32,7 @@ export default function HeaderText() {
 							text={t.header.cv}
 							href="/CV_Julie_Deshayes.pdf"
 							imageSrc="/icons/arrow-button.png"
-							altText="Flèche indiquant que le lien mène à une page externe"
+							aria-label="Ouvre un fichier PDF dans un autre onglet"
 							external
 						/>
 					</div>

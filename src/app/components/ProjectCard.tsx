@@ -56,7 +56,7 @@ export default function ProjectCard({
 					}`}
 				>
 					<div>
-						<h3 className="text-white text-xl mb-2">{title}</h3>
+						<h4 className="text-white text-xl mb-2">{title}</h4>
 						<p className="text-pink-dark mb-4">{technos}</p>
 					</div>
 					<div className="flex gap-4 items-center justify-end">
