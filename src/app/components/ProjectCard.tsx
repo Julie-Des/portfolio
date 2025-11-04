@@ -64,6 +64,7 @@ export default function ProjectCard({
 							target="_blank"
 							rel="noopener noreferrer"
 							className="icon-social"
+							aria-label="Voir le projet sur Github - ouvre un nouvel onglet"
 							onClick={(e) => e.stopPropagation()}
 						>
 							<GithubIcon className="w-8 h-8" />
@@ -73,7 +74,7 @@ export default function ProjectCard({
 							text={t.projects.see}
 							href={link}
 							imageSrc="/icons/arrow-button.png"
-							altText="Lien vers le projet"
+							altText="Voir le projet en ligne - ouvre un nouvel onglet"
 							external
 						/>
 					</div>
