@@ -41,6 +41,7 @@ export default function ProjectCard({
 					alt={title}
 					fill
 					sizes="(max-width: 440px) 100vw, 400px"
+					loading="lazy"
 					className={`object-contain bg-pink-light transition-transform duration-500 ease-in-out ${
 						isActive ? "scale-110" : "group-hover:scale-110"
 					}`}
@@ -89,6 +90,7 @@ export default function ProjectCard({
 						fill
 						className="object-contain"
 						sizes="(max-width: 768px) 100vw, 220px"
+						loading="lazy"
 					/>
 				</div>
 			</div>

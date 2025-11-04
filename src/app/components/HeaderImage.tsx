@@ -7,7 +7,7 @@ export default function HeaderImage() {
                 <Image src="/icons/arrow-pink.png" alt="" width={115} height={115} />
             </div>
             <div>
-                <Image src="/images/photo-profil.webp" alt="Photo de profil de Julie Deshayes" width={300} height={300} className="rounded-full border-[6] border-pink-hover shadow-[0_0_20px_#f9cada99]" />
+                <Image src="/images/photo-profil.webp" priority alt="Photo de profil de Julie Deshayes" width={300} height={300} className="rounded-full border-[6] border-pink-hover shadow-[0_0_20px_#f9cada99]" />
             </div>
         </div>
     )

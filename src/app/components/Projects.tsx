@@ -29,6 +29,7 @@ export default function Projects() {
 					alt=""
 					width={100}
 					height={100}
+					loading="lazy"
 					className="absolute left-[-55px] sm:left-[-70px] lg:left-[-100px] top-[-20px] rotate-[144deg] w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
 				/>
 			</div>

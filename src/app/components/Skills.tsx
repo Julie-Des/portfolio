@@ -17,6 +17,7 @@ export default function Skills() {
 					alt={logo.alt}
 					width={logo.width ?? 70}
 					height={55}
+					loading="lazy"
 					className="logo-techno w-[50px] h-[35px] sm:w-[70px] sm:h-[55px] object-contain"
 				/>
 			))}
@@ -52,13 +53,15 @@ export default function Skills() {
 						alt=""
 						width={80}
 						height={80}
+						loading="lazy"
 						className="absolute top-[-20] left-[-40] rotate-[85deg] lg:rotate-[25deg] lg:static w-16 h-16 xl:w-20 xl:h-20"
 					/>
 					<Image
 						src="/images/logos/skills/computer.png"
-						alt="Ordinateur affichant les logos H T M L, C S S, JavaScript et TypeScript"
+						alt="Ecran d'ordinateur affichant les logos H T M L, C S S, JavaScript et TypeScript"
 						width={375}
 						height={375}
+						loading="lazy"
 						className="logo-techno w-[220px] sm:w-[280px] md:w-[375px] h-auto object-contain"
 					/>
 					<Image
@@ -66,6 +69,7 @@ export default function Skills() {
 						alt=""
 						width={80}
 						height={80}
+						loading="lazy"
 						className="absolute bottom-[-20] right-[-40] rotate-[-90deg] lg:rotate-[-160deg] lg:static w-16 h-16 xl:w-20 xl:h-20"
 					/>
 				</div>
