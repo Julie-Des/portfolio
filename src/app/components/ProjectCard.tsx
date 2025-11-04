@@ -38,7 +38,7 @@ export default function ProjectCard({
 			>
 				<Image
 					src={image}
-					alt={title}
+					alt=""
 					fill
 					sizes="(max-width: 440px) 100vw, 400px"
 					loading="lazy"
@@ -75,7 +75,6 @@ export default function ProjectCard({
 							text={t.projects.see}
 							href={link}
 							imageSrc="/icons/arrow-button.png"
-							altText="Voir le projet en ligne - ouvre un nouvel onglet"
 							external
 						/>
 					</div>
