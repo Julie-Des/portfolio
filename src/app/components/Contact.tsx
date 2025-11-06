@@ -110,8 +110,8 @@ export default function Contact() {
 					<Cta tag="button" type="submit" text={translations.contact.submit} disabled={status === "loading"} />
 				</div>
 
-				{status === "success" && <p className="text-pink-dark text-center mt-2">{t.contact.success}</p>}
-				{status === "error" && <p className="text-red-600 text-center mt-2">{t.contact.error}</p>}
+				{status === "success" && <p className="text-pink-dark text-center mt-2">{translations.contact.success}</p>}
+				{status === "error" && <p className="text-red-600 text-center mt-2">{translations.contact.error}</p>}
 			</form>
 			<div className="flex gap-4 mt-5">
 				<a
