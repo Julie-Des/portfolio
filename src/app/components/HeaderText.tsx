@@ -51,7 +51,7 @@ export default function HeaderText() {
 							target="_blank"
 							rel="noopener noreferrer"
 							className="icon-social"
-							aria-label="Profil Github- ouvre un nouvel onglet"
+							aria-label="Profil Github - ouvre un nouvel onglet"
 						>
 							<GithubIcon className="w-7 h-7" />
 						</a>

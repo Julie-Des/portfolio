@@ -30,8 +30,8 @@ export default function Skills() {
 			className="bg-gradient-to-b from-[#FBEFF3] to-[#FDFDFD] pt-12 pb-12 px-10 md:px-12 flex flex-col items-center relative scroll-mt-[104]"
 		>
 			<h3 className="title mb-10">{translations.skills.title}</h3>
-
 			<div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-8">
+
 				{/* left column */}
 				<div className="w-full max-w-[280px] flex flex-col-reverse lg:flex-col">
 					<div className="mt-4 lg:mt-0 lg:mb-4">

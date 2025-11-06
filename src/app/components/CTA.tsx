@@ -31,7 +31,7 @@ export default function Cta({
 }: ButtonProps) {
   const baseClasses = `btn ${disabled ? "cursor-default" : "cursor-pointer"}`;
 
-  // Image à côté du texte
+  // Image next to the text in the CTA
   let sideElement = null;
   if (imageElement) {
     sideElement = imageElement;
@@ -48,7 +48,7 @@ export default function Cta({
     );
   }
 
-  // 🔹 Cas 1 : lien interne
+  // If CTA is an internal link
   if (!disabled && tag === "a" && href && !external) {
     return (
       <Link href={href} className={baseClasses}>
@@ -58,7 +58,7 @@ export default function Cta({
     );
   }
 
-  // 🔹 Cas 2 : lien externe
+  // If CTA is an external link
   if (!disabled && tag === "a" && href) {
     return (
       <a
@@ -73,7 +73,7 @@ export default function Cta({
     );
   }
 
-  // 🔹 Cas 3 : bouton cliquable
+  // If CTA is a clickable button
   if (!disabled && tag === "button") {
     return (
       <button type={type} onClick={onClick} className={baseClasses}>
@@ -83,7 +83,7 @@ export default function Cta({
     );
   }
 
-  // 🔹 Cas 4 : mode désactivé (non cliquable)
+  // If CTA is a non-clickable element
   return (
     <div className={baseClasses}>
       {text}
