@@ -11,9 +11,6 @@ export async function POST(req: Request) {
 				user: process.env.EMAIL_USER,
 				pass: process.env.EMAIL_PASS,
 			},
-            tls: {
-				rejectUnauthorized: false, // permet d'éviter les erreurs SSL sur certains serveurs, à retirer lors de la mise en prod
-			},
 		});
 
 		await transporter.sendMail({
