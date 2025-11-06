@@ -6,7 +6,7 @@ import Cta from "./CTA";
 import skillsData from "@/data/skillsData.json";
 
 export default function Skills() {
-	const { t } = useTranslation();
+	const { translations } = useTranslation();
 
 	const renderLogoGrid = (logos: { src: string; alt: string; width?: number }[]) => (
 		<div className="grid grid-cols-2 gap-3 place-items-center [grid-auto-rows:56px]">
@@ -29,7 +29,7 @@ export default function Skills() {
 			id="skills"
 			className="bg-gradient-to-b from-[#FBEFF3] to-[#FDFDFD] pt-12 pb-12 px-10 md:px-12 flex flex-col items-center relative scroll-mt-[104]"
 		>
-			<h3 className="title mb-10">{t.skills.title}</h3>
+			<h3 className="title mb-10">{translations.skills.title}</h3>
 
 			<div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-8">
 				{/* left column */}
@@ -37,7 +37,7 @@ export default function Skills() {
 					<div className="mt-4 lg:mt-0 lg:mb-4">
 						<Cta
 							tag="div"
-							text={t.skills.text1}
+							text={translations.skills.text1}
 							imageSrc="/icons/palette.png"
 							altText="palette de peinture"
 							disabled
@@ -80,7 +80,7 @@ export default function Skills() {
 					<div className="mb-4 lg:mb-0 lg:mt-4">
 						<Cta
 							tag="div"
-							text={t.skills.text2}
+							text={translations.skills.text2}
 							imageSrc="/icons/gear.png"
 							altText="Engrenage"
 							disabled

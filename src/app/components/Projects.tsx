@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard";
 import Image from "next/image";
 
 export default function Projects() {
-	const { t, tr } = useTranslation();
+	const { translations, tr } = useTranslation();
 	const [activeId, setActiveId] = useState<number | null>(null);
 
 	// Close the active card when clicked outside
@@ -23,7 +23,7 @@ export default function Projects() {
 			className="bg-white pt-12 pb-12 flex flex-col items-center px-10 sm:px-20 lg:px-30 scroll-mt-[104]"
 		>
 			<div className="relative">
-				<h3 className="title">{t.projects.title}</h3>
+				<h3 className="title">{translations.projects.title}</h3>
 				<Image
 					src="/icons/arrow-pink.png"
 					alt=""

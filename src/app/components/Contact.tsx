@@ -8,7 +8,7 @@ import LinkedinIcon from "./icons/LinkedinIcon";
 import Image from "next/image";
 
 export default function Contact() {
-	const { t } = useTranslation();
+	const { translations } = useTranslation();
 
 	const [formData, setFormData] = useState({
 		name: "",
@@ -50,7 +50,7 @@ export default function Contact() {
 			className="bg-green pt-10 pb-8 flex flex-col items-center px-10 md:px-20 lg:px-40 scroll-mt-[104]"
 		>
 			<div className="relative">
-				<h3 className="font-bold text-2xl md:text-3xl text-pink-dark mb-10">{t.contact.title}</h3>
+				<h3 className="font-bold text-2xl md:text-3xl text-pink-dark mb-10">{translations.contact.title}</h3>
 				<Image
 					src="/icons/arrow-pink.png"
 					alt=""
@@ -63,7 +63,7 @@ export default function Contact() {
 			<form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-md">
 				<div>
 					<label htmlFor="name" className="label-form">
-						{t.contact.nameLabel}
+						{translations.contact.nameLabel}
 					</label>
 					<input
 						type="text"
@@ -78,7 +78,7 @@ export default function Contact() {
 
 				<div>
 					<label htmlFor="email" className="label-form">
-						{t.contact.emailLabel}
+						{translations.contact.emailLabel}
 					</label>
 					<input
 						type="email"
@@ -93,7 +93,7 @@ export default function Contact() {
 
 				<div>
 					<label htmlFor="message" className="label-form">
-						{t.contact.messageLabel}
+						{translations.contact.messageLabel}
 					</label>
 					<textarea
 						id="message"
@@ -107,7 +107,7 @@ export default function Contact() {
 				</div>
 
 				<div className="mt-4 flex justify-center">
-					<Cta tag="button" type="submit" text={t.contact.submit} disabled={status === "loading"} />
+					<Cta tag="button" type="submit" text={translations.contact.submit} disabled={status === "loading"} />
 				</div>
 
 				{status === "success" && <p className="text-pink-dark text-center mt-2">{t.contact.success}</p>}

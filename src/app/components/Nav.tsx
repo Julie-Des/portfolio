@@ -4,13 +4,13 @@ import { leckerli } from "../fonts";
 import { useTranslation } from "../../context/TranslationContext";
 
 export default function Nav() {
-	const { t, lang, switchLang } = useTranslation();
+	const { translations, lang, switchLang } = useTranslation();
 
 	const navItems = [
-		{ href: "#about", label: t.navbar.about },
-		{ href: "#projects", label: t.navbar.projects },
-		{ href: "#skills", label: t.navbar.skills },
-		{ href: "#contact", label: t.navbar.contact },
+		{ href: "#about", label: translations.navbar.about },
+		{ href: "#projects", label: translations.navbar.projects },
+		{ href: "#skills", label: translations.navbar.skills },
+		{ href: "#contact", label: translations.navbar.contact },
 	];
 
 	return (

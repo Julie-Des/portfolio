@@ -9,7 +9,7 @@ type Translations = typeof fr;
 
 type TranslationContextType = {
   lang: Lang;
-  t: Translations;
+  translations: Translations;
   tr: (key: string) => string;
   switchLang: (lang: Lang) => void;
 };
@@ -51,7 +51,7 @@ export function TranslationProvider({ children }: Readonly<{ children: ReactNode
   );
 
   const value = useMemo(
-    () => ({ lang, t: translations, tr, switchLang }),
+    () => ({ lang, translations: translations, tr, switchLang }),
     [lang, translations, tr]
   );
 

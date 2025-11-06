@@ -24,7 +24,7 @@ export default function ProjectCard({
 	isActive,
 	onToggle,
 }: ProjectCardProps) {
-	const { t } = useTranslation();
+	const { translations } = useTranslation();
 
 	return (
 		<div>
@@ -72,7 +72,7 @@ export default function ProjectCard({
 						</a>
 						<Cta
 							tag="a"
-							text={t.projects.see}
+							text={translations.projects.see}
 							href={link}
 							imageSrc="/icons/arrow-button.png"
 							external
