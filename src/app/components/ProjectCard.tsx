@@ -63,7 +63,7 @@ export default function ProjectCard({
 						<a
 							href={github}
 							target="_blank"
-							rel="noopener noreferrer"
+							rel="noopener noreferrer nofollow"
 							className="icon-social"
 							aria-label="Voir le projet sur Github - ouvre un nouvel onglet"
 							onClick={(e) => e.stopPropagation()}

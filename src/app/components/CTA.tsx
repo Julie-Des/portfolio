@@ -65,7 +65,7 @@ export default function Cta({
         href={href}
         className={baseClasses}
         target={external ? "_blank" : "_self"}
-        rel={external ? "noopener noreferrer" : undefined}
+        rel={external ? "noopener noreferrer nofollow" : undefined}
       >
         {text}
         {sideElement}

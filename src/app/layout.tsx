@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     description: 'Portfolio de Julie, développeuse Web',
     images: ['https://portfolio-julie-deshayes.vercel.app/images/photo-profil.webp'],
   },
+   robots: {
+    index: true,
+    follow: true,
+   }
 };
 
 export default function RootLayout({

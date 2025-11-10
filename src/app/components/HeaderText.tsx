@@ -40,7 +40,7 @@ export default function HeaderText() {
 						<a
 							href="https://www.linkedin.com/in/julie-deshayes-21443727b"
 							target="_blank"
-							rel="noopener noreferrer"
+							rel="noopener noreferrer nofollow"
 							className="icon-social"
 							aria-label="Profil LinkedIn - ouvre un nouvel onglet"
 						>
@@ -49,7 +49,7 @@ export default function HeaderText() {
 						<a
 							href="https://github.com/Julie-Des"
 							target="_blank"
-							rel="noopener noreferrer"
+							rel="noopener noreferrer nofollow"
 							className="icon-social"
 							aria-label="Profil Github - ouvre un nouvel onglet"
 						>
