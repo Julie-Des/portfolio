@@ -12,7 +12,7 @@
     { "src": "/images/logos/skills/git.png", "alt": "Git" },
     { "src": "/images/logos/skills/swagger.png", "alt": "Swagger", "width": 100 },
     { "src": "/images/logos/skills/next.png", "alt": "Next.js" },
-    { "src": "/images/logos/skills/agile.png", "alt": "Méthode agile" },
+    { "src": "/images/logos/skills/npm.png", "alt": "N P M" },
     { "src": "/images/logos/skills/seo.png", "alt": "S E O" }
   ]
 }
