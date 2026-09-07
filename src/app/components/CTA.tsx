@@ -48,6 +48,16 @@ export default function Cta({
     );
   }
 
+  // If CTA is an anchor on the current page
+  if (!disabled && tag === "a" && href && href.startsWith("#")) {
+    return (
+      <a href={href} className={baseClasses}>
+        {text}
+        {sideElement}
+      </a>
+    );
+  }
+
   // If CTA is an internal link
   if (!disabled && tag === "a" && href && !external) {
     return (
